@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong Number Checker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1><i class="fas fa-calculator"></i> Armstrong Number Checker</h1>
+            </div>
+            
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="numberInput" class="input-label">Enter a number</label>
+                    <input type="number" id="numberInput" class="input-field" placeholder="Try 153, 370, or 9474..." autocomplete="off">
+                </div>
+                
+                <button id="checkButton" class="btn" onclick="checkArmstrong()">
+                    <i class="fas fa-search"></i> Check Number
+                </button>
+                
+                <div id="result" class="result">
+                    <!-- Result will be displayed here -->
+                </div>
+                
+                <div class="info-section">
+                    <h3><i class="fas fa-info-circle"></i> What is an Armstrong Number?</h3>
+                    <p>An Armstrong number (also known as a <span class="highlight">narcissistic number</span>) is a number that equals the sum of its own digits each raised to the power of the number of digits.</p>
+                    
+                    <ul class="example-list">
+                        <li><span class="highlight">153</span> is an Armstrong number: 1<sup>3</sup> + 5<sup>3</sup> + 3<sup>3</sup> = 1 + 125 + 27 = 153</li>
+                        <li><span class="highlight">370</span> is an Armstrong number: 3<sup>3</sup> + 7<sup>3</sup> + 0<sup>3</sup> = 27 + 343 + 0 = 370</li>
+                        <li><span class="highlight">9474</span> is an Armstrong number: 9<sup>4</sup> + 4<sup>4</sup> + 7<sup>4</sup> + 4<sup>4</sup> = 6561 + 256 + 2401 + 256 = 9474</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <script src="jsc.js"> </script>
+</body>
+</html>
